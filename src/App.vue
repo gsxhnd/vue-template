@@ -4,10 +4,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 </script>
 
 <template>
-  <div>h1</div>
-  <div>
-    <router-view />
-  </div>
+  <router-view class="router-view" />
 </template>
 
 <style scoped lang="less"></style>

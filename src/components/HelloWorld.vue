@@ -6,6 +6,8 @@ defineProps<{ msg: string }>();
 const count = ref(0);
 </script>
 
-<template></template>
+<template>
+  <div class="Hello">hello world</div>
+</template>
 
 <style scoped lang="less"></style>
