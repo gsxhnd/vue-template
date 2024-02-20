@@ -11,6 +11,12 @@ const RootRoute: RouteRecordRaw = {
   meta: {
     title: "Root",
   },
+  children: [
+    {
+      path: "/aaa/",
+      component: HelloWorld,
+    },
+  ],
 };
 
 const LoginRoute: RouteRecordRaw = {

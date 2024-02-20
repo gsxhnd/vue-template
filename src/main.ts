@@ -3,13 +3,16 @@ import { router } from "@/router";
 import { createPinia } from "pinia";
 import "./style.less";
 import App from "./App.vue";
-import PrimeVue from "primevue/config";
-import "primevue/resources/themes/lara-light-indigo/theme.css";
+
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+
+const vuetify = createVuetify({});
 
 const pinia = createPinia();
 
 const app = createApp(App);
-app.use(PrimeVue);
+app.use(vuetify);
 app.use(router);
 app.use(pinia);
 
